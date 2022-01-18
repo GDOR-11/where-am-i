@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = 'en-US'>
+	<head>
+		<meta charset = 'utf-8' name = 'viewport' content = 'width = device-width, initial-scale = 1'>
+		<meta http-equiv = 'X-UA-Compatible' content = 'ie = edge'>
+		<title>where am i</title>
+		<link rel = 'stylesheet' href = 'style.css'>
+	</head>
+	<body>
+		<div id = 'javascript-enabled'>
+			<div style = 'background-color: #e6e6e6;'>
+				<div style = 'margin: 0vw 10vw;'>
+					<p style = 'margin-top: 0px;padding-top: 48px;font-size: 300%;'>where am i</p>
+					<p style = 'margin-bottom: 0px;padding-bottom: 24px;font-size: 150%;'>where am i is a site that provides a simple, quick, precise and trustable way to detect what are your current geographical coordinates, only requiring you internet access and a browser that supports the geolocation API.<br><br>there are a lot of reasons to why you would want to know your latitude and longitude, but i am not going to list them because i have no idea of what they are.</p>
+				</div>
+			</div>
+			<div class = 'centered-x' style = 'padding: 50px;margin-top: 50px;border-radius: 25px;background-color: lightslategrey;width: fit-content;border: none;'>
+				<button class = 'centered-x' id = 'calculate' style = 'padding: 35px;border-radius: 15px;background-color: #00dfdf;width: fit-content;border: none;'>calculate</button><br><br>
+				<p style = 'display: inline;'>latitude: </p><p class = 'coordinate' id = 'latitude' style = 'display: inline;'>0.0000000</p><br><br>
+				<p style = 'display: inline;'>longitude: </p><p class = 'coordinate' id = 'longitude' style = 'display: inline;'>0.0000000</p><br><br>
+				<p style = 'display: inline;'>precision: </p><p class = 'coordinate' id = 'precision' style = 'display: inline;'>0.0000000</p>
+			</div>
+			<script type = 'module' src = 'index.js'></script>
+		</div>
+
+
+		<noscript>
+			<style>
+				#javascript-enabled {
+					display: none;
+				}
+			</style>
+			<div class = 'centered-xy'>
+				<p>please <a href = 'https://www.enable-javascript.com/' style = 'display: inline;'>enable javascript</a> to use this site</p>
+			</div>
+		</noscript>
+	</body>
+</html>
